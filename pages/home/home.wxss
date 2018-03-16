@@ -19,6 +19,7 @@ page {
 .navbar .item.active {
     color: #f0145a;
 }
+/* 当前item的底部线 */
 .navbar .item.active::after {
     content: '';
     display: block;
@@ -28,4 +29,12 @@ page {
     right: 0;
     height: 6rpx;
     background: #f0145a;
+}
+/* swiper */
+swiper {
+    height: 300rpx;
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
 }

@@ -1,12 +1,21 @@
 <!--pages/home/home.wxml-->
+<!-- 导航栏 -->
 <view class="navbar">
     <!-- * data-idx=”{{index}}” *存储一些数据供home.js里调用，这里data-xxx，xxx就是你给home.js里提供的数据关键词，home.js通过获取xxx关键词来获取xxx里面的数据 -->
+    <!-- 这里的{{item}}在text之间不能有空隙（不能换行），否则出错 -->
     <text 
         wx:for="{{navbar}}" 
         data-idx="{{index}}" 
-        class="item {{currentTab == index ? 'active' : ''}}"
-        wx:key="unique"
-        bindtap="navbarTap">
-        {{item}}
-    </text>
+        class="item {{currentTab==index ? 'active' : ''}}" 
+        wx:key="unique" 
+        bindtap="navbarTap">{{item}}</text>
 </view>
+<!-- banner -->
+<!-- indicator-dots 是否显示面板指示点，autoplay 是否自动切换，interval 自动切换时间间隔，duration 滑动动画时长 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image src="{{item}}"></image>
+        </swiper-item>
+    </block>
+</swiper>
