@@ -10,7 +10,7 @@
         wx:key="unique" 
         bindtap="navbarTap">{{item}}</text>
 </view>
-<!-- banner -->
+<!-- banner：轮播图 -->
 <!-- indicator-dots 是否显示面板指示点，autoplay 是否自动切换，interval 自动切换时间间隔，duration 滑动动画时长 -->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}">
@@ -19,3 +19,12 @@
         </swiper-item>
     </block>
 </swiper>
+<!-- 分类导航 -->
+<view class="navs">
+    <block wx:for-items="{{navItems}}" wx:key="name>
+        <view class="nav-item" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <image src="{{item.imageUrl}}" class="nav-image></image>
+            <text>{{item.name}}</text>
+        </view>
+    </block>
+</view>
