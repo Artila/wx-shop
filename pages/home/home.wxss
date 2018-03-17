@@ -4,6 +4,7 @@ page {
     flex-direction: column;
     height: 100%;
 }
+/* 顶部导航 */
 .navbar {
     flex: none;
     display: flex;
@@ -37,4 +38,72 @@ swiper {
 swiper-item image {
     width: 100%;
     height: 100%;
+}
+/*=================品牌馆、类目 的样式====================*/
+.navs {
+    display: flex;
+}
+.nav-item {
+    padding: 20rpx;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item .nav-image {
+    width: 80rpx;
+    height: 80rpx;
+}
+.nav-item text {
+    padding-top: 20rpx;
+    font-size: 25rpx;
+}
+/*=================新品上架 样式====================*/
+.cate-container {
+    color: #fff;
+}
+.category-title {
+    margin-top: 15rpx;
+    margin-bottom: 0;    
+    display: flex;
+    flex-direction: column;
+}
+.category-title .name {
+    margin: 10rpx auto;
+    font-size: 40rpx;
+    text-align: center;
+}
+.line_flag {
+    margin: 20rpx auto;
+    display: inline-block;
+    width: 80rpx;
+    height: 1rpx;
+    background-color: gainsboro;
+    text-align: center;
+}
+.line {
+    margin: 20rpx 0rpx;
+    display: inline-block;    
+    width: 100%;
+    height: 2rpx;
+    background-color: gainsboro;
+    text-align: center;    
+}
+image.head-img {
+    width: 100%;
+    height: 270rpx;
+}
+text {
+    font-size: 40rpx;
+    color: #444;
+}
+p {
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    color: red;
+}
+/* 分割线 */
+.separate {
+    height: 15rpx;
+    background-color: #f2f2f2;
 }
