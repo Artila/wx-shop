@@ -1,109 +1,124 @@
 /* pages/home/home.wxss */
 page {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 /* 顶部导航 */
 .navbar {
-    flex: none;
-    display: flex;
-    background: #fff;
+  flex: none;
+  display: flex;
+  background: #fff;
 }
 .navbar .item {
-    position: relative;
-    flex: auto;
-    text-align: center;
-    line-height: 80rpx;
-    font-size: 14px;
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 14px;
 }
 .navbar .item.active {
-    color: #f0145a;
+  color: #f0145a;
 }
 /* 当前item的底部线 */
 .navbar .item.active::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 6rpx;
-    background: #f0145a;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6rpx;
+  background: #f0145a;
 }
 /* swiper */
 swiper {
-    height: 300rpx;
+  height: 300rpx;
 }
 swiper-item image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 /*=================品牌馆、类目 的样式====================*/
+
 .navs {
-    display: flex;
+  display: flex;
 }
+
 .nav-item {
-    padding: 20rpx;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20rpx;
 }
+
 .nav-item .nav-image {
-    width: 80rpx;
-    height: 80rpx;
+  width: 80rpx;
+  height: 80rpx;
+  /*border-radius: 50%;设置边界圆角*/
 }
+
 .nav-item text {
-    padding-top: 20rpx;
-    font-size: 25rpx;
+  padding-top: 20rpx;
+  font-size: 25rpx;
 }
+
 /*=================新品上架 样式====================*/
-.cate-container {
-    color: #fff;
-}
+
 .category-title {
-    margin-top: 15rpx;
-    margin-bottom: 0;    
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
 }
+
 .category-title .name {
-    margin: 10rpx auto;
-    font-size: 40rpx;
-    text-align: center;
+  font-size: 40rpx;
+  text-align: center;
+  margin: 10rpx auto;
 }
+
 .line_flag {
-    margin: 20rpx auto;
-    display: inline-block;
-    width: 80rpx;
-    height: 1rpx;
-    background-color: gainsboro;
-    text-align: center;
+  width: 80rpx;
+  height: 1rpx;
+  display: inline-block;
+  margin: 20rpx auto;
+  background-color: gainsboro;
+  text-align: center;
 }
+
 .line {
-    margin: 20rpx 0rpx;
-    display: inline-block;    
-    width: 100%;
-    height: 2rpx;
-    background-color: gainsboro;
-    text-align: center;    
+  width: 100%;
+  height: 2rpx;
+  display: inline-block;
+  margin: 20rpx 0rpx;
+  background-color: gainsboro;
+  text-align: center;
 }
+
 image.head-img {
-    width: 100%;
-    height: 270rpx;
+  width: 100%;
+  height: 270rpx;
 }
+
 text {
-    font-size: 40rpx;
-    color: #444;
+  color: #444;
+  font-size: 40rpx;
 }
+
 p {
-    margin-top: 20rpx;
-    font-size: 30rpx;
-    color: red;
+  color: red;
+  font-size: 30rpx;
+  margin-top: 20rpx;
 }
+
+.cate-container {
+  color: #fff;
+}
+
 /* 分割线 */
 .separate {
-    height: 15rpx;
-    background-color: #f2f2f2;
+  height: 15rpx;
+  background-color: #f2f2f2;
 }
